@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  paciente:
+    build: ./paciente
+    container_name: paciente
+    ports:
+      - "5001:5001"
+    restart: always

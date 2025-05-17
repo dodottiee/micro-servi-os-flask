@@ -1,0 +1,10 @@
+version: '3.8'
+
+faturamento:
+    build: ./faturamento
+    container_name: faturamento
+    ports:
+      - "5003:5003"
+    depends_on:
+      - consulta
+    restart: always

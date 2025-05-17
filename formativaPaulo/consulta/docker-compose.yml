@@ -1,0 +1,10 @@
+version: '3.8'
+
+consulta:
+    build: ./consulta
+    container_name: consulta
+    ports:
+      - "5002:5002"
+    depends_on:
+      - paciente
+    restart: always

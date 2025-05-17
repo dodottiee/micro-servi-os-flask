@@ -1,0 +1,10 @@
+ version: '3.8'
+ 
+ prontuario:
+    build: ./prontuario
+    container_name: prontuario
+    ports:
+      - "5004:5004"
+    depends_on:
+      - paciente
+    restart: always
